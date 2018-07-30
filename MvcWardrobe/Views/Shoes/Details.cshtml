@@ -1,0 +1,46 @@
+﻿@model MvcWardrobe.Sho
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<p>
+    @*@Html.ActionLink("Edit", "Edit", new { id = Model.ShoeId }) |*@
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+<div>
+    <h4>@Html.DisplayFor(model => model.Name)</h4>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            <div>
+                <img src="@Url.Content(Model.Photo)" style="height:340px;width:auto;" />
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div>
+                <b>@Html.DisplayNameFor(model => model.Type):</b> @Html.DisplayFor(model => model.Type)
+            </div>
+
+            <div>
+                <b>@Html.DisplayNameFor(model => model.Color):</b>  @Html.DisplayFor(model => model.Color)
+            </div>
+
+            <div>
+                <b>@Html.DisplayNameFor(model => model.Season):</b> @Html.DisplayFor(model => model.Season)
+            </div>
+
+            <div>
+                <b>@Html.DisplayNameFor(model => model.Occasion):</b> @Html.DisplayFor(model => model.Occasion)
+            </div>
+
+            <p>
+                @Html.ActionLink("Edit", "Edit", new { id = Model.ShoeId }) |
+                @Html.ActionLink("Delete", "Delete", new { id = Model.ShoeId })
+            </p>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+﻿body {
+    background-color: #ECF0F1;
+}
+
+.container {
+    font-family: 'Quicksand', sans-serif;
+}
+
+nav {
+    font-family: 'Quicksand', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+h1 { 
+    color: white;
+}
+
+.lead {
+    font-weight: bold;
+}
+
+a {
+    font-weight: bold;
+}
